@@ -1,0 +1,35 @@
+# Bar-Chart-Trial-Error
+Simple Bar Chart
+<!DOCTYPE html>
+<html>
+<head>
+<title>DJ3s Bar Chart</title>
+
+<script src="<script src="https://d3js.org/d3.v4.min.js"></script>
+<style  type="text/css1"
+div.bar{
+
+display:inline-block;
+width:60px;
+height:110px;
+margin-right:2px;
+background-color:darkmagenta;
+}
+</style>
+<body>
+<script>
+  var dataset=[5,10,20,15,50];
+  d3.select("body").selectAll("div")
+  .data(dataset)
+  .enter()
+  .append("div")
+  .attr("class","bar")
+  .style("height",function(d){
+  return Barheight+"px";
+  });
+  </script>
+  
+</body>
+</head>
+</html>                                                
+                                                        
